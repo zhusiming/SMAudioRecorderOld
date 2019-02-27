@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     s.homepage     = "https://github.com/zhusiming/SMAudioRecorder"
 
 
-    s.license     = { :type => "MIT", :file => "LICENSE" }
+#s.license     = { :type => "MIT", :file => "LICENSE" }
 
 
     s.author             = { "zhusiming" => "siming_zhu@163.com" }
@@ -28,6 +28,7 @@ Pod::Spec.new do |s|
 
     s.source_files  = "SMAudioRecorder/SMAudioRecorder/SMAudioRecorder.{h,m}"
     s.requires_arc = true
+    s.dependency 'SMAudioRecorder/VoiceConvert'
     #   VoiceConvert
     s.subspec 'VoiceConvert' do |v|
         v.source_files = 'SMAudioRecorder/SMAudioRecorder/SMAudioRecorder/VoiceConvert/*.{h,mm}',
