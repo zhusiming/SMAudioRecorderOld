@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "SMAudioRecorder"
-    s.version      = "1.0.1"
+    s.version      = "1.0.2"
     s.summary      = "through this class can be achieved by mixed text, text to add a link event, connect the text color settings."
 
     s.homepage     = "https://github.com/zhusiming/SMAudioRecorder"
@@ -30,11 +30,11 @@ Pod::Spec.new do |s|
     s.requires_arc = true
     #   VoiceConvert
     s.subspec 'VoiceConvert' do |v|
-        v.source_files = 'SMAudioRecorder/SMAudioRecorder/VoiceConvert/*.{h,mm}',
-                            'SMAudioRecorder/SMAudioRecorder/VoiceConvert/opencore-amrwb/*.{h,m}',
-                            'SMAudioRecorder/SMAudioRecorder/VoiceConvert/lib/*.{h,m,a}',
-                            'SMAudioRecorder/SMAudioRecorder/VoiceConvert/opencore-amrnb/*.{h,m}',
-                            'SMAudioRecorder/SMAudioRecorder/VoiceConvert/amrwapper/*.{h,m}'
+        v.source_files = 'SMAudioRecorder/SMAudioRecorder/SMAudioRecorder/VoiceConvert/*.{h,mm}',
+                            'SMAudioRecorder/SMAudioRecorder/SMAudioRecorder/VoiceConvert/opencore-amrwb/*.{h,m}',
+                            'SMAudioRecorder/SMAudioRecorder/SMAudioRecorder/VoiceConvert/lib/*.{h,m,a}',
+                            'SMAudioRecorder/SMAudioRecorder/SMAudioRecorder/VoiceConvert/opencore-amrnb/*.{h,m}',
+                            'SMAudioRecorder/SMAudioRecorder/SMAudioRecorder/VoiceConvert/amrwapper/*.{h,m}'
     end
 end
 
