@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "SMAudioRecorder"
-    s.version      = "1.0.2"
+    s.version      = "1.0.4"
     s.summary      = "through this class can be achieved by mixed text, text to add a link event, connect the text color settings."
 
     s.homepage     = "https://github.com/zhusiming/SMAudioRecorder"
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = "8.0"
 
-    s.source       = { :git => "https://github.com/zhusiming/SMAudioRecorder.git", :tag => s.version.to_s }
+    s.source       = { :git => "https://github.com/zhusiming/SMAudioRecorder.git", :tag => "#{s.version}" }
 
     s.source_files  = "SMAudioRecorder/SMAudioRecorder/SMAudioRecorder.{h,m}"
     s.requires_arc = true
