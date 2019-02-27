@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = "8.0"
 
-    s.source       = { :git => "https://github.com/zhusiming/SMAudioRecorder.git", :tag => "v#{s.version}" }
+    s.source       = { :git => "https://github.com/zhusiming/SMAudioRecorder.git", :tag => "#{s.version}" }
 
     s.source_files  = "SMAudioRecorder/SMAudioRecorder/SMAudioRecorder.{h,m}"
     s.requires_arc = true
