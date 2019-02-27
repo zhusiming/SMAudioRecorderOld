@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "SMAudioRecorder"
-    s.version      = "1.0.0"
+    s.version      = "1.0.1"
     s.summary      = "through this class can be achieved by mixed text, text to add a link event, connect the text color settings."
 
     s.homepage     = "https://github.com/zhusiming/SMAudioRecorder"
@@ -24,20 +24,17 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = "8.0"
 
-    s.source       = { :git => "https://github.com/zhusiming/SMAudioRecorder.git", :tag => "#{s.version}" }
+    s.source       = { :git => "https://github.com/zhusiming/SMAudioRecorder.git", :tag => s.version.to_s }
 
     s.source_files  = "SMAudioRecorder/SMAudioRecorder/SMAudioRecorder.{h,m}"
     s.requires_arc = true
     #   VoiceConvert
-    s.subspec 'VoiceConvert' do |Voice|
-        Voice.source_files = 'SMAudioRecorder/SMAudioRecorder/VoiceConvert/*.{h,mm}',
+    s.subspec 'VoiceConvert' do |v|
+        v.source_files = 'SMAudioRecorder/SMAudioRecorder/VoiceConvert/*.{h,mm}',
                             'SMAudioRecorder/SMAudioRecorder/VoiceConvert/opencore-amrwb/*.{h,m}',
                             'SMAudioRecorder/SMAudioRecorder/VoiceConvert/lib/*.{h,m,a}',
                             'SMAudioRecorder/SMAudioRecorder/VoiceConvert/opencore-amrnb/*.{h,m}',
                             'SMAudioRecorder/SMAudioRecorder/VoiceConvert/amrwapper/*.{h,m}'
-        Voice.xcconfig = {
-            'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SM_VoiceConvert=1',
-        }
     end
 end
 
